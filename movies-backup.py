@@ -36,9 +36,9 @@ def print_all_movie_by_name():
         #print them nicely
 
 
-        print(f"{'Movie':<30} {'Publish Year':<30} {'Genre':<30} {'Production Company':<30} {'Movie Length':<15} {'Production Budget':<20} {'Oscars Won':<5}")
+        print(f"{'Movie':<30}")
     for movie in results:
-        print(f"{movie[0]:<30} {movie[1]:<30} {movie[2]:<30} {movie[3]:<30} {movie[4]:<15} {movie[5]:<20} {movie[6]:<5}")
+        print(f"{movie[0]:<30}")
         #loop ends here
 
     #close db
@@ -59,9 +59,9 @@ def print_all_movie_by_publish_year():
         #print them nicely
 
 
-        print(f"{'Publish Year':<30} {'Movie':<30} {'Genre':<30} {'Production Company':<30} {'Movie Length':<15} {'Production Budget':<20} {'Oscars Won':<5}")
+        print(f"{'Publish Year':<20} {'Movie':<20}")
     for movie in results:
-        print(f"{movie[1]:<30} {movie[0]:<30} {movie[2]:<30} {movie[3]:<30} {movie[4]:<15} {movie[5]:<20} {movie[6]:<5}")
+        print(f"{movie[1]:<20} {movie[0]:<20}")
         #loop ends here
 
     #close db
@@ -79,9 +79,9 @@ def print_all_movie_by_movie_genre():
         #print them nicely
 
 
-        print(f"{'Genre':<30} {'Movie':<30} {'Publish Year':<30} {'Production Company':<30} {'Movie Length':<15} {'Production Budget':<20} {'Oscars Won':<5}")
+        print(f"{'Genre':<20} {'Movie':<20}")
     for movie in results:
-        print(f"{movie[2]:<30} {movie[0]:<30} {movie[1]:<30} {movie[3]:<30} {movie[4]:<15} {movie[5]:<20} {movie[6]:<5}")
+        print(f"{movie[2]:<20} {movie[0]:<20}")
         #loop ends here
 
     #close db
@@ -99,9 +99,9 @@ def print_all_movie_by_production_company():
         #print them nicely
 
 
-        print(f"{'Production Company':<30} {'Movie':<30} {'Publish Year':<30} {'Genre':<30} {'Movie Length':<15} {'Production Budget':<20} {'Oscars Won':<5}")
+        print(f"{'Production Company':<20} {'Movie':<20}")
     for movie in results:
-        print(f"{movie[3]:<30} {movie[0]:<30} {movie[1]:<30} {movie[2]:<30} {movie[4]:<15} {movie[5]:<20} {movie[6]:<5}")
+        print(f"{movie[3]:<20} {movie[0]:<20}")
         #loop ends here
 
     #close db
@@ -119,9 +119,9 @@ def print_all_movie_by_movie_length():
         #print them nicely
 
 
-        print(f"{'Movie Length':<15} {'Movie':<30} {'Publish Year':<30} {'Genre':<30} {'Production Company':<30} {'Production Budget':<20} {'Oscars Won':<5}")
+        print(f"{'Movie Length':<15} {'Movie':<30}")
     for movie in results:
-        print(f"{movie[4]:<15} {movie[0]:<30} {movie[1]:<30} {movie[2]:<30} {movie[3]:<30} {movie[5]:<20} {movie[6]:<5}")
+        print(f"{movie[4]:<15} {movie[0]:<30}")
         #loop ends here
 
     #close db
@@ -139,9 +139,9 @@ def print_all_movie_by_production_budget():
         #print them nicely
 
 
-        print(f"{'Production Budget':<20} {'Movie':<30} {'Publish Year':<30} {'Genre':<30} {'Production Company':<30} {'Movie Length':<20} {'Oscars Won':<5}")
+        print(f"{'Production Budget':<20} {'Movie':<30} ")
     for movie in results:
-        print(f"{movie[5]:<20} {movie[0]:<30} {movie[1]:<30} {movie[2]:<30} {movie[3]:<30} {movie[4]:<20} {movie[6]:<5}")
+        print(f"{movie[5]:<20} {movie[0]:<30} ")
         #loop ends here
 
     #close db
@@ -159,9 +159,9 @@ def print_all_movie_by_oscars_won():
         #print them nicely
 
 
-        print(f"{'Oscars Won':<15} {'Movie':<30} {'Publish Year':<30} {'Genre':<30} {'Production Company':<30} {'Movie Length':<15} {'Production Budget':<25}")
+        print(f"{'Oscars Won':<15} {'Movie':<30}")
     for movie in results:
-        print(f"{movie[6]:<15} {movie[0]:<30} {movie[1]:<30} {movie[2]:<30} {movie[3]:<30} {movie[4]:<15} {movie[5]:<25}")
+        print(f"{movie[6]:<15} {movie[0]:<30}")
         #loop ends here
 
     #close db
