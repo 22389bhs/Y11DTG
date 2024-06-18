@@ -13,6 +13,15 @@ def print_all_movie():
         results = cursor.fetchall()
         #loop through all the results then
         #print them nicely
+def print_all_movie():
+    '''Print all the movies nicely'''
+    with sqlite3.connect(DATABASE) as db:
+        cursor = db.cursor()
+        sql = "SELECT * from movies;"
+        cursor.execute(sql)
+        results = cursor.fetchall()
+        #loop through all the results then
+        #print them nicely
 
 
         print(f"{'Movie':<30} {'Publish Year':<30} {'Genre':<30} {'Production Company':<30} {'Movie Length':<15} {'Production Budget':<20} {'Oscars Won':<5}")
